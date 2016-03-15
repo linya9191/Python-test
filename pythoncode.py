@@ -1,5 +1,6 @@
- def simple_frame():
-  import pandas as pd
+def simple_frame():
+    # import required packages
+    import pandas as pd
     import nltk
     import numpy as np
     # tokenize the review text and store the word corpus
@@ -23,4 +24,5 @@
         feature_vector_list.append(feature_vector)
       # convert feature vector to dataframe object
     dataframe_output = pd.DataFrame(np.array(feature_vector_list), columns=['rating']+word_dict.keys())
-    return [dataframe_output]
+    return [dataframe_output];
+    
