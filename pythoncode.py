@@ -1,4 +1,4 @@
-def simple_frame():
+def simple_frame(dataframe1=None):
     # import required packages
     import pandas as pd
     import nltk
